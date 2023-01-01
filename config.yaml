@@ -1,0 +1,54 @@
+baseURL: 'https://voice0726.github.io/'
+languageCode: 'ja'
+title: 'voice0726.github.io'
+theme: 'papermod'
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+taxonomies:
+  category: categories
+  tag: tags
+
+output:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+params:
+  env: production
+  title: 'voice0726.github.io'
+  description: 'voice0726.github.io'
+  author: 'voice0726'
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto
+  disableThemToggle: false
+
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+
+menu:
+  main:
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 5
+    - identifier: categories
+      name: Categories
+      url: /categories/
+      weight: 10
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 20
+    - identifier: archives
+      name: Archives
+      url: /archives/
+      weight: 30
+pygmentsUseClasses: true
+markup:
+  highlight:
+    noClasses: false
